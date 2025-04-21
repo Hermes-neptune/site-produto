@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes</title>
+    <link rel="shortcut icon" type="imagex/png" href="img/logo/Neptune.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/logo/logo-white.png" alt="hermes Logo">
+                <h1>Hermes <span>Neptune</span></h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">O Projeto</a></li>
+                    <li><a href="#features">Como Funciona</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Diversão que transforma vidas e o planeta</h2>
+                <p>Jogue, recicle e ajude quem mais precisa! Nosso arcade une entretenimento, consciência ambiental e solidariedade.</p>
+                <a href="#about" class="btn">Conheça o Projeto</a>
+                <a href="#contact" class="btn btn-secondary">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>O Projeto</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Transformando lixo eletrônico em diversão</h3>
+                    <p>Nosso projeto se trata de um arcade feito com materiais que estavam sem uso em nossa instituição: computadores antigos que estão obsoletos para nosso tipo de uso, teclados que apresentaram algum tipo de defeito e monitores antigos.</p>
+                    <p>Visamos a reciclagem e o reaproveitamento de recursos, então nossa intenção é reutilizar materiais que estariam sem uso ou que apresentam mau funcionamento para a construção de nossos árcades.</p>
+                    <p>Os controles possuem botões padrões de árcade, mas o seu cabeamento é feito da placa de um teclado antigo, onde são soldados fios na placa do teclado e eles são conectados em cada botão.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/01.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/03.jpg">
+                </div>
+                <div class="about-text">
+                    <h3>Viva a experiência definitiva em jogos retro com o Arcade Hermes!</h3>
+                    <p>O Arcade Hermes reúne os melhores clássicos dos fliperamas em uma única plataforma acessível e sustentável.</p>
+                    <p> Com controles autênticos e tecnologia inteligente, você revive a magia dos jogos antigos enquanto contribui com causas sociais e ambientais.</p>
+                    <p>Nosso sistema exclusivo transforma doações e ações sustentáveis em créditos para jogar, unindo diversão e responsabilidade social.</p>
+                    <p>Acesse seus games favoritos com seu RM escolar e mergulhe na nostalgia dos arcades, agora com propósito!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como Funciona</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Sistema de Fichas</h3>
+                    <p>Funciona por meio de uma placa WeMos D1 que se conecta a uma API para verificar os créditos do aluno através do RM (Registro de Matrícula).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Controles Reutilizados</h3>
+                    <p>Os controles são feitos com peças de teclados antigos, dando nova vida a componentes que seriam descartados.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Ganhe Créditos</h3>
+                    <p>Participe de campanhas de doação ou projetos de reciclagem para ganhar créditos e jogar no arcade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Passo a Passo</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Digite seu RM</h3>
+                        <p>O aluno digita seu RM (Registro de Matrícula) em um teclado conectado à placa WeMos.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Verificação de Créditos</h3>
+                        <p>O sistema consulta uma API e mostra na tela LCD o nome do aluno e os créditos disponíveis.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Inicie o Jogo</h3>
+                        <p>Para jogar, basta apertar o botão START (Player 1 ou Player 2), e o valor é debitado automaticamente.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Ganhe Mais Créditos</h3>
+                        <p>Participe de campanhas de doação ou projetos de reciclagem para obter mais créditos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeria</h2>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/01.png" alt="Arcade">
+                    <div class="gallery-overlay">
+                        <h3>Arcade Sustentável</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/03.jpg" alt="Controles">
+                    <div class="gallery-overlay">
+                        <h3>Controles Personalizados</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/04.jpg">
+                    <div class="gallery-overlay">
+                        <h3>Campanhas de Doação</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contato</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Entre em contato conosco</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>R. Ribeirão Preto,75 - Jardim Pedroso, Mauá - SP</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 98765-4321</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hermes</h3>
+                    <p>Leve diversão à sua escola enquanto ajuda o meio ambiente e quem mais precisa!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">O Projeto</a></li>
+                        <li><a href="#features">Como Funciona</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Inscreva-se para receber novidades sobre nosso projeto.</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <button type="submit" class="btn">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Hermes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/form.js"></script>
+    <script src="js/hamburger_menu.js"></script>
+    <script src="js/scrolling.js"></script>
+</body>
+</html>

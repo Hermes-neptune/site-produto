@@ -50,6 +50,7 @@ footer {
 .social-links {
     display: flex;
     gap: 15px;
+    padding-top: 20px;
 }
 
 .social-links a {
@@ -65,6 +66,7 @@ footer {
 
 .social-links a:hover {
     background-color: var(--primary);
+    color: var(--light);
     transform: translateY(-5px);
 }
 

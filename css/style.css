@@ -161,7 +161,7 @@ nav a:hover::after {
 }
 
 .section {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .section-title {
@@ -406,4 +406,12 @@ nav a:hover::after {
     .section-title h2 {
         font-size: 2rem;
     }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
 }

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="imagex/png" href="img/logo/Neptune.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/faq.css">
@@ -215,18 +216,21 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm"
+                        action="https://formspree.io/f/xdkgjdpp"
+                        method="POST"
+                    >
                         <div class="form-group">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" required>
+                            <input type="text" name="nome" id="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Mensagem</label>
-                            <textarea id="message" required></textarea>
+                            <textarea id="message" name="Mensagem" required></textarea>
                         </div>
                         <button type="submit" class="btn">Enviar Mensagem</button>
                     </form>
@@ -302,10 +306,9 @@
                     <h3>Hermes</h3>
                     <p>Leve diversão à sua escola enquanto ajuda o meio ambiente e quem mais precisa!</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="material-symbols-outlined"> mail</i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -316,14 +319,18 @@
                         <li><a href="#features">Como Funciona</a></li>
                         <li><a href="#gallery">Galeria</a></li>
                         <li><a href="#contact">Contato</a></li>
+                        <li><a href="problemas.html">Problemas</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Newsletter</h3>
                     <p>Inscreva-se para receber novidades sobre nosso projeto.</p>
-                    <form id="newsletterForm">
+                    <form id="newsletterForm"
+                        action="https://formspree.io/f/xwpozqwo"
+                        method="POST"
+                    >
                         <div class="form-group">
-                            <input type="email" placeholder="Seu email" required>
+                            <input type="email"  name="email" placeholder="Seu email" required>
                         </div>
                         <button type="submit" class="btn">Inscrever</button>
                     </form>
@@ -335,7 +342,6 @@
         </div>
     </footer>
     <script src="js/faq.js"></script>
-    <script src="js/form.js"></script>
     <script src="js/hamburger_menu.js"></script>
     <script src="js/scrolling.js"></script>
 </body>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="img/logo/Neptune.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/suport.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/logo/logo-white.png" alt="hermes Logo">
+                <h1>Hermes <span>Neptune</span></h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="navMenu">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">O Projeto</a></li>
+                    <li><a href="index.html#features">Como Funciona</a></li>
+                    <li><a href="index.html#gallery">Galeria</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="section" id="suporte">
+        <div class="container">
+            <div class="section-title">
+                <h2>Problemas com o Arcade?</h2>
+                <p class="subtitle">Soluções rápidas para questões técnicas</p>
+            </div>
+            
+            <div class="suporte-container">
+                <div class="problemas-card">
+                    <h3><i class="fas fa-tools"></i> Problemas Frequentes</h3>
+                    
+                    <div class="problema-item">
+                        <div class="problema-header">
+                            <h4>Não consigo logar com meu RM</h4>
+                            <button class="solucao-btn">Mostrar Solução</button>
+                        </div>
+                        <div class="solucao-content">
+                            <ol>
+                                <li>Verifique se digitou seu RM corretamente</li>
+                                <li>Confirme com a coordenação se seu cadastro está ativo</li>
+                                <li>Se o problema persistir, reinicie o sistema do arcade (botão lateral)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="problema-item">
+                        <div class="problema-header">
+                            <h4>Os controles não estão respondendo</h4>
+                            <button class="solucao-btn">Mostrar Solução</button>
+                        </div>
+                        <div class="solucao-content">
+                            <ol>
+                                <li>Verifique se o jogo já foi iniciado (crédito debitado)</li>
+                                <li>Conferir se todos os cabos estão firmemente conectados</li>
+                                <li>Limpe os botões com pano seco (sem produtos químicos)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="problema-item">
+                        <div class="problema-header">
+                            <h4>Tela congelada ou sem imagem</h4>
+                            <button class="solucao-btn">Mostrar Solução</button>
+                        </div>
+                        <div class="solucao-content">
+                            <ol>
+                                <li>Reinicie o arcade usando o botão de energia</li>
+                                <li>Verifique se o monitor está recebendo energia</li>
+                                <li>Confira a conexão do cabo VGA/HDMI na parte traseira</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="problema-item">
+                        <div class="problema-header">
+                            <h4>Créditos não aparecem após doação</h4>
+                            <button class="solucao-btn">Mostrar Solução</button>
+                        </div>
+                        <div class="solucao-content">
+                            <ol>
+                                <li>Verifique com a coordenação se sua doação já foi registrada</li>
+                                <li>Espere até 24h para atualização do sistema</li>
+                                <li>Caso persista, solicite ajuda técnica na secretaria</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulário de Suporte -->
+                <div class="formulario-suporte">
+                    <h3><i class="fas fa-headset"></i> Não resolveu seu problema?</h3>
+                    <p>Preencha o formulário abaixo para ajuda técnica especializada</p>
+                    
+                    <form id="formSuporte"
+                        action="https://formspree.io/f/xblobkzk"
+                        method="POST"
+                    >
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rm">RM (Registro de Matrícula)</label>
+                            <input type="text" name="rm" id="rm">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="problema">Descreva seu problema</label>
+                            <textarea id="problema" name="problema" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="urgencia">Nível de Urgência</label>
+                            <select name="urgencia" Sid="urgencia">
+                                <option value="baixa">Baixa (posso esperar)</option>
+                                <option value="media" selected>Média (preciso logo)</option>
+                                <option value="alta">Alta (não consigo usar)</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hermes</h3>
+                    <p>Leve diversão à sua escola enquanto ajuda o meio ambiente e quem mais precisa!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="material-symbols-outlined"> mail</i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">O Projeto</a></li>
+                        <li><a href="#features">Como Funciona</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="problemas.html">Problemas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Inscreva-se para receber novidades sobre nosso projeto.</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <button type="submit" class="btn">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Hermes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/suport.js"></script>
+</body>
+</html>

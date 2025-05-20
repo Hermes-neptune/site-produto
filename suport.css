@@ -1,0 +1,102 @@
+header{
+    border-bottom: 20px;
+}
+.subtitle{
+    padding-top: 10px;
+}
+
+h3{
+    padding-bottom: 20px;
+}
+
+.suporte-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.problemas-card, .formulario-suporte {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.problema-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.problema-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solucao-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.solucao-btn:hover {
+    background-color: #27ae60;
+}
+
+.solucao-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-top: 10px;
+}
+
+.solucao-content ol {
+    padding-left: 20px;
+}
+
+.solucao-content li {
+    margin-bottom: 8px;
+}
+
+.problema-item.active .solucao-content {
+    max-height: 300px;
+    padding-top: 10px;
+}
+
+.formulario-suporte {
+    background-color: var(--dark);
+    color: white;
+}
+
+.formulario-suporte h3 {
+    color: white;
+}
+
+.formulario-suporte .form-group label {
+    color: #ddd;
+}
+
+.formulario-suporte input,
+.formulario-suporte textarea,
+.formulario-suporte select {
+    background-color: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+    color: white;
+}
+
+.formulario-suporte input::placeholder,
+.formulario-suporte textarea::placeholder {
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .suporte-container {
+        grid-template-columns: 1fr;
+    }
+}
